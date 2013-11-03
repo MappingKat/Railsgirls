@@ -10,3 +10,20 @@
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
 Railsgirls::Application.config.secret_key_base = 'a1da54fc74c74dc2d0454783ade89b0a5c32a1b48a0e3495020cc70d7e2ac3e4aef6a80ccfb448a07bce443f614f08f2dc2b0a35382d752a164abbc2c65e0144'
+
+# require 'securerandom'
+
+# def secure_token
+#   token_file = Rails.root.join('.secret')
+#   if File.exist?(token_file)
+#     # Use the existing token.
+#     File.read(token_file).chomp
+#   else
+#     # Generate a new token and store it in token_file.
+#     token = SecureRandom.hex(64)
+#     File.write(token_file, token)
+#     token
+#   end
+# end
+
+# SampleApp::Application.config.secret_key_base = secure_token
